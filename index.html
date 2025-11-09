@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Login Section -->
+    <div id="login-section">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Task Section -->
+    <div id="task-section" class="hidden">
+      <h2 id="welcome"></h2>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+
+      <!-- PM Controls (Only visible to PM) -->
+      <div id="pm-controls" class="hidden">
+        <h3>Add New Task</h3>
+        <input type="text" id="title" placeholder="Task Title" />
+        <input type="text" id="desc" placeholder="Task Description" />
+        <input type="date" id="deadline" />
+        <select id="assignedTo">
+          <option value="">Assign to...</option>
+          <option value="user1">user1</option>
+          <option value="user2">user2</option>
+        </select>
+        <button onclick="addTask()">Add Task</button>
+      </div>
+
+      <h3>Your Tasks</h3>
+      <div id="taskList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

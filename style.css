@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.container {
+  width: 400px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+input, select, button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* General Button */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Specific Buttons */
+button.edit-btn {
+  background: #17a2b8; 
+}
+
+button.edit-btn:hover {
+  background: #117a8b;
+}
+
+button.delete-btn {
+  background-color: #dc3545 !important; 
+  color: white !important;
+  border: none;
+}
+
+button.delete-btn:hover {
+  background-color: #b52a36 !important; 
+}
+
+button.logout-btn {
+  background: #6c757d; 
+}
+
+button.logout-btn:hover {
+  background: #545b62;
+}
+
+/* Task cards */
+.task {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Hide sections */
+.hidden {
+  display: none;
+}
+
+/* Optional red border for overdue tasks */
+.overdue {
+  border: 2px solid red;
+}
